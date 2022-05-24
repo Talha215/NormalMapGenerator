@@ -1,0 +1,49 @@
+stages:
+  - build
+  - test
+  - deploy
+
+image: node:16.14.0
+
+build:
+  stage: build
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - echo "Start building App"
+    - npm install
+    - npm run build
+    - echo "Build successfully!"
+  artifacts:
+    paths:
+      - build
+
+test:
+  stage: test
+  cache:
+    paths:
+      - node_modules/
+    policy: pull
+  script:
+    - echo "Testing App"
+    - npm run test
+    - echo "Test successfully!"
+
+pages:
+  stage: deploy
+  dependencies: 
+    - build
+  script:
+    - echo "Deploying App"
+    - npm run deploy
+    - rm -rf public
+    - cp build/index.html build/404.html
+    - mv build public
+    - echo "App Deployed!"
+  artifacts:
+    paths:
+      - public
+      - node_modules/
+  only:
+    - main

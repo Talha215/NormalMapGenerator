@@ -1,0 +1,5 @@
+- { name: 'github',
+    # label: 'Provider name', # optional label for login button, defaults to "GitHub"
+    app_id: 'YOUR_APP_ID',
+    app_secret: 'YOUR_APP_SECRET',
+    args: { scope: 'user:email' } }

@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+
+.continue{
+  border-radius: 15px;
+  z-index: 10;
+}
+
+#cropper {
+  margin-bottom: 75px;
+  margin-top: 50px;
+  line-height: 32px;
+  font-size: calc(1px + 2vmin);
+  
+}
+
+.centered {
+  position: relative;
+  height: 80vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.continueBtnBtm{
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  z-index: 10;
+}
+
+
+.continueBtnBtm > button {
+  margin: 0px 45px;
+  padding: 0px 50px;
+  z-index: 10;
+}

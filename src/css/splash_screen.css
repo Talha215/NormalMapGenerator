@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+
+
+.main-container {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  text-align:center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#splash-title{
+  font-size: 70px;
+  word-spacing: absolute;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 100px; /* between paragraphs */
+}
+
+
+#splash-text {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-family: 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+  line-height: 0px;   /* within paragraph */
+  margin-bottom: 100px; /* between paragraphs */
+  }
+
+h1 {
+  position: fixed;
+  margin-top: -700px;
+  word-spacing: absolute;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-family: 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+  line-height: 32px;   /* within paragraph */
+  margin-bottom: 50px; /* between paragraphs */
+}
+
+h1:hover{
+  cursor: default;
+}

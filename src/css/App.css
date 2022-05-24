@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+
+.App {
+  min-height: 100vh;
+  min-width: 100vw;
+  text-align: center;
+  background-color: #282c34;
+  background-size: cover;
+  overflow: hidden;
+  
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/*"Normal Map Generator" text*/
+#title{
+  font-size: calc(50px + 2vmin);
+  word-spacing: absolute;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+
+/*Defines the header block where "Normal Map Generator" text sits*/
+.header {
+ 
+  height: fit-content;
+  align-items: center;
+  flex-direction: column;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+.main_body {
+  height: 100%; 
+}
+
+
+/*header specific css*/
+.header_column{
+  float:left;
+
+}
+
+.left, .right{
+  width: 25%;
+  padding-bottom: 500em;
+  margin-bottom: -500em;
+  margin-top: 30px;
+  align-items: center;
+  
+
+}
+
+.middle{
+  width: 50%;
+  padding-bottom: 500em;
+  margin-bottom: -500em;
+}
+
+.header_row:after{
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+@media screen and (max-width: 981px){
+  .header_column{
+    width: 100%;
+  }
+}

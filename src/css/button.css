@@ -1,0 +1,71 @@
+
+/*Main css styling for all button elements*/
+#button-container{
+  position:center;
+  font-family: 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 15px;
+  transition-duration: .5s;
+  background-color: #04AA6D; 
+}
+
+
+#button-container:hover {
+  background-color: #3edd9b;
+  -webkit-box-shadow: 0px 0px 8px 1px #9BFFFB; 
+  box-shadow: 0px 0px 8px 1px #9BFFFB;
+}
+
+#button-display{
+  display:none;
+}
+
+
+/*Affixes button to the bottom of the screen*/
+.BtnBtm{
+  position: static;
+  bottom: 10px;
+  margin: 0 auto;
+  z-index: 10;
+
+}
+
+.BtnBtm > button {
+  margin: 0px 45px;
+  padding: 0px 50px;
+}
+
+
+
+
+
+
+
+
+.back-button {
+  left: -5%;
+  width: 150px;
+
+}
+
+.back-button:hover {
+  
+  background-color: #3edd9b;
+  -webkit-box-shadow: 0px 0px 8px 1px #9BFFFB; 
+  box-shadow: 0px 0px 8px 1px #9BFFFB;
+
+}
+
+.back-button:hover:before{
+  content: "Go Back";
+
+}
+
+button:hover span {
+  display: none
+}
